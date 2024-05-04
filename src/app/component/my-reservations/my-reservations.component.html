@@ -1,0 +1,39 @@
+<div class="reservations">
+    <h1>My Movie Reservations</h1>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Movie</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reservation of reservations">
+          <ng-container *ngIf="!editModes[reservation.id]; else editModeTemplate">
+            <td>{{ reservation.movie }}</td>
+            <td>{{ reservation.date }}</td>
+            <td>{{ reservation.time }}</td>
+            <td>
+              <button class="btn" (click)="toggleEditMode(reservation.id)">Update</button>
+              <button class="btn" (click)="deleteReservation(reservation)">Delete</button>
+            </td>
+          </ng-container>
+          <ng-template #editModeTemplate>
+            <td><input type="text" [(ngModel)]="reservation.movie"></td>
+            <td><input type="text" [(ngModel)]="reservation.date"></td>
+            <td><input type="text" [(ngModel)]="reservation.time"></td>
+            <td>
+              <button class="btn" (click)="saveChanges(reservation.id)">Save</button>
+              <button class="btn" (click)="toggleEditMode(reservation.id)">Cancel</button>
+            </td>
+          </ng-template>
+        </tr>
+      </tbody>
+    </table>
+    
+  
+  </div>
+  

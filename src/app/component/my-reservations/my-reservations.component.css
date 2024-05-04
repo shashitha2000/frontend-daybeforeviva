@@ -1,0 +1,77 @@
+/* Styling for the reservations component */
+.reservations {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Styling for the table */
+  .reservations table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for table headings */
+  .reservations th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 24px;
+  }
+  
+  /* Styling for table rows */
+  .reservations td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Styling for delete and update buttons */
+  .reservations .btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reservations .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the "My Reservations" button */
+  .reservations .my-reservations-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+  }
+  
+  .reservations .my-reservations-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Glassy placeholder */
+  input::placeholder {
+    color: #ccc;
+    font-style: italic;
+  }
+  
+  /* Larger, nicer fonts */
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
