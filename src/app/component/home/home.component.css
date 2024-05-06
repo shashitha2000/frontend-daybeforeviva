@@ -38,3 +38,47 @@
     font-size: 20px;
     margin-left: 10px;
   }
+  .chatbot-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    z-index: 1000; /* ensure the chatbot is above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chatbot-container {
+    width: 80%;
+    max-width: 800px; /* maximum width for the chatbot */
+    height: 70vh;
+    min-height: 400px;
+    background-color: #fff; /* white background for the chatbot */
+    border-radius: 10px;
+    overflow: hidden; /* hide any content that overflows the container */
+  }
+  
+  .chatbot-icon {
+    cursor: pointer;
+  }
+  .chatbot-button {
+    background-color: #000000; /* blue color for the button */
+    color: #fff; /* white text color */
+    padding: 10px 20px; /* padding around the icon and text */
+    border: none; /* no border */
+    border-radius: 5px; /* rounded corners */
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .chat-icon {
+    margin-right: 10px; /* space between icon and text */
+  }
+  
+  .chatbot-button:hover {
+    background-color: #aaafb9; /* darker blue on hover */
+  }
+  

@@ -23,6 +23,7 @@ import { SrilankanCuisineComponent } from './component/srilankan-cuisine/srilank
 import { StayComponent } from './component/stay/stay.component';
 import { TableComponent } from './component/table/table.component';
 import { TheaterOwnerDashboardComponent } from './component/theater-owner-dashboard/theater-owner-dashboard.component';
+import { VirtualTourComponent } from './component/virtual-tour/virtual-tour.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -48,7 +49,8 @@ const routes: Routes = [
   { path: 'manage-products',component:ManageProductsComponent},
   { path: 'ar-viewer',component:ArViewerComponent},
   { path: 'manage-movies',component:ManageMoviesComponent},
-  { path: 'reservations',component:MyReservationsComponent}
+  { path: 'reservations',component:MyReservationsComponent},
+  { path: 'virtual-tour',component:VirtualTourComponent}
 ];
 
 @NgModule({

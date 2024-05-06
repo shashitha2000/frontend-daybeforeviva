@@ -48,6 +48,8 @@ import { MaterialModule } from './material-module';
 import { MockAuthService } from './service/mock-auth.service';
 import { ManageMoviesComponent } from './component/manage-movies/manage-movies.component';
 import { MyReservationsComponent } from './component/my-reservations/my-reservations.component';
+import { VirtualTourComponent } from './component/virtual-tour/virtual-tour.component';
+import { ChatbotComponent } from './component/chatbot/chatbot.component';
 
 
 @NgModule({
@@ -87,6 +89,8 @@ import { MyReservationsComponent } from './component/my-reservations/my-reservat
     ArViewerComponent,
     ManageMoviesComponent,
     MyReservationsComponent,
+    VirtualTourComponent,
+    ChatbotComponent,
   ],
   imports: [
     BrowserModule,

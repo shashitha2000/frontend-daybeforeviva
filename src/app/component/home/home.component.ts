@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  showChatbot: boolean = false;
+
+  openChatbot() {
+    this.showChatbot = !this.showChatbot;
+  }
+
 
 }

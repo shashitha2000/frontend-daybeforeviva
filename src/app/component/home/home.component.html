@@ -1,13 +1,27 @@
 <div class="background-image-container">
-    
-    <div class="text-container">
-      <div class="main-text">
-        You shop we deliver
-        <hr class="underline">
-        <span class="sub-text">Enjoy a seamless, safe shopping experience with our shopping mall</span>
-        <span class="clock-icon">🕒</span>
-        Open today. Plan your shopping experience with us
-      </div>
+  <div class="text-container">
+    <div class="main-text">
+      You shop we deliver
+      <hr class="underline">
+      <span class="sub-text">Enjoy a seamless, safe shopping experience with our shopping mall</span>
+      <span class="clock-icon">🕒</span>
+      Open today. Plan your shopping experience with us
     </div>
+    <button class="chatbot-button" (click)="openChatbot()">
+      <i class="fas fa-comments chat-icon"></i>
+      Chat with us
+    </button>
   </div>
-  
+</div>
+
+<div *ngIf="showChatbot" class="chatbot-overlay" (click)="openChatbot()">
+  <div class="chatbot-container">
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/vy3eHrpLbqL9jn7tD1yb6"
+      title="Chatbot"
+      width="100%"
+      style="height: 70vh; min-height: 400px"
+      frameborder="0"
+    ></iframe>
+  </div>
+</div>

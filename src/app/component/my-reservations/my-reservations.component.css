@@ -1,11 +1,11 @@
 /* Styling for the reservations component */
 .reservations {
+    background-image: url('https://i.postimg.cc/x8NVj61Q/0-Hkn-VQR-lvy-Xq-KUa-M.jpg');
+
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Set minimum height to cover the entire viewport */
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto;
   }
   
   /* Styling for the table */
@@ -73,5 +73,37 @@
     font-size: 18px;
     line-height: 1.6;
     color: #333;
+  }
+  /* Style for the heading */
+.reservations h1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with some transparency */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  /* Style for movie name, date, and time */
+.reservations td {
+    padding: 10px; /* Padding around the text */
+    vertical-align: middle; /* Align content vertically in the middle */
+    text-align: center; /* Align text horizontally in the center */
+  }
+  
+  .reservations th {
+    text-align: center; /* Align header text horizontally in the center */
+  }
+  
+  .reservations td:first-child {
+    color: white; /* White text color for movie name */
+    background-color: black; /* Black background for movie name */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make the movie name bold */
+  }
+  
+  .reservations td:nth-child(2),
+  .reservations td:nth-child(3) {
+    color: white; /* White text color for date and time columns */
+    background-color: black; /* Black background for date and time columns */
+    border-radius: 5px; /* Rounded corners */
   }
   
