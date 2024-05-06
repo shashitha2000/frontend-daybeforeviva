@@ -1,20 +1,24 @@
-<h2>Manage Movies</h2>
-<div class="movie-list">
-  <div *ngFor="let movie of movies" class="movie-card">
-    <div class="movie-thumbnail">
-      <img [src]="movie.posterUrl" alt="{{ movie.title }} Poster">
-    </div>
-    <div class="movie-details">
-      <h3>{{ movie.title }}</h3>
-      <p>{{ movie.description }}</p>
-      <div class="movie-info">
-        <div>Showtime: {{ movie.showTime }}</div>
-        <div>Duration: {{ movie.duration }}</div>
+<div class="background-image">
+  <div class="content-wrapper">
+    <h2>Manage Movies</h2>
+    <div class="movie-list">
+      <div *ngFor="let movie of movies" class="movie-card">
+        <div class="movie-thumbnail">
+          <img [src]="movie.posterUrl" alt="{{ movie.title }} Poster">
+        </div>
+        <div class="movie-details">
+          <input type="text" [(ngModel)]="movie.title" placeholder="Title">
+          <textarea [(ngModel)]="movie.description" placeholder="Description"></textarea>
+          <div class="movie-info">
+            <div><input type="text" [(ngModel)]="movie.showTime" placeholder="Showtime"></div>
+            <div><input type="text" [(ngModel)]="movie.duration" placeholder="Duration"></div>
+          </div>
+        </div>
+        <div class="movie-actions">
+          <button class="btn btn-update" (click)="updateMovie(movie.id)">Save</button>
+          <button class="btn btn-delete" (click)="deleteMovie(movie.id)">Delete</button>
+        </div>
       </div>
-    </div>
-    <div class="movie-actions">
-      <button class="btn btn-update" (click)="updateMovie(movie.id)">Edit</button>
-      <button class="btn btn-delete" (click)="deleteMovie(movie.id)">Delete</button>
     </div>
   </div>
 </div>

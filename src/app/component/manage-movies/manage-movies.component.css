@@ -1,53 +1,88 @@
+.background-image {
+  position: relative;
+  background-image: url('https://i.postimg.cc/DZ9b0SS0/lovepik-film-background-board-film-background-image-500877889.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
 .movie-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .movie-card {
-    width: 200px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .movie-thumbnail img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .movie-details {
-    padding: 10px;
-    flex-grow: 1;
-  }
-  
-  .movie-info {
-    margin-top: 10px;
-  }
-  
-  .movie-actions {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #e9e9e9;
-  }
-  
-  .btn {
-    padding: 5px 10px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  flex: 0 0 calc(33.333% - 20px); /* 33.333% to have 3 cards per row, adjust as needed */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Add this style to align items in the card horizontally */
+.movie-card .movie-thumbnail,
+.movie-card .movie-details,
+.movie-card .movie-actions {
+  width: 100%;
+}
+
+.movie-thumbnail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-details {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.movie-details input,
+.movie-details textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.movie-info {
+  margin-top: 10px;
+}
+
+.movie-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e9e9e9;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
